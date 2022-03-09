@@ -1,3 +1,5 @@
+{% include base.html %}
+
 # Week-0
 ## Tri 2 Review
 How can I help others and myself in education with Tech?
