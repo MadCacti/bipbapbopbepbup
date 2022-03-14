@@ -23,3 +23,7 @@ Talk about dopamine issues above. Real? Parent conspiracy? Anything that is impa
 How does someone empower themself in a digital world?
 How does someone that is empowered help someone that is not empowered? Describe something you could do at Del Norte HS.
 Is paper or red tape blocking digital empowerment? Are there such barriers at Del Norte? Elsewhere?
+- I think people can empower themselves by knowing more in the Computer world
+- People can in fact help others by passing what they know and teaching them as such.
+- At DNHS, we can teach the less computer-smart people, especially those who came from underserved families
+- I think barriers do exist but are hard to define for most things have been well known by majority of the people, so it is hard to find the minorities.
