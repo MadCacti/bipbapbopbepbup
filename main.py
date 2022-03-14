@@ -69,7 +69,7 @@ def buildMenu(banner, options):
         print(f"invalid choice: {choice}")
   
 
-    buildMenu(banner, options)  # recursion, start menu over again
+    buildMenu(banner, options)  
 
 
 if __name__ == "__main__":
