@@ -58,7 +58,7 @@ class Prompts:
   #menu selection and execute
   def choice(self):
     # get choice from user
-    choice = input("Type your choice> ")
+    choice = input("input your choice> ")
     # validate choice and run
     #execute selection
     try: #try converting to integer

@@ -1,7 +1,6 @@
 import time
 import os
 
-# As you can see, its not very optimal 
 def frame1():
     print("        __o ")
     print("      _ \<_- ")

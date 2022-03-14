@@ -13,22 +13,22 @@ sub_menu = [
 
 # Menu banner is typically defined by menu owner
 border = "=" * 25
-banner = f"\n{border}\nPlease Select An Option\n{border}"
+banner = f"\n{border}\nchoose one\n{border}"
 
 # menu blueprint
 def menu():
-    title = "Function Menu" + banner
+    title = "menu" + banner
     menu_list = main_menu.copy()
-    menu_list.append(["Patterns", submenu])
+    menu_list.append(["patterns", submenu])
     buildMenu(title, menu_list)
 
 def submenuc():
-  title = "Class Submenu" + banner
+  title = "submenu" + banner
   m = submenus.Menu(title, sub_menu)
   m.menu()
 
 def submenu():
-    title = "Function Submenu" + banner
+    title = "submenu" + banner
     buildMenu(title, sub_menu)
 
 # builds console menu
@@ -44,7 +44,7 @@ def buildMenu(banner, options):
         print(key, '->', value[0])
 
     # get user input
-    choice = input("Type your choice> ")
+    choice = input("input your choice> ")
 
     # Process user input
     try:
@@ -60,13 +60,13 @@ def buildMenu(banner, options):
                 exec(open(action).read())
             except FileNotFoundError:
                 # check main_menu dictionary
-                print(f"File not found!: {action}")
+                print(f"file not found!: {action}")
     except ValueError:
         # not a number 
-        print(f"Not a number: {choice}")
+        print(f"not a number: {choice}")
     except UnboundLocalError:
         # not one of the numbers listed
-        print(f"Invalid choice: {choice}")
+        print(f"invalid choice: {choice}")
   
 
     buildMenu(banner, options)  # recursion, start menu over again
