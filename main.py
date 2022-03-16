@@ -1,8 +1,10 @@
 # import needed procedures, with ["name", "name.py"]
-import submenus
+from procedures import submenus
+from procedures.fibonacci import fib
 main_menu = [
     ["matrix", "procedures/matrix.py"],
     ["swap", "procedures/swap.py"],
+    ["fibonacci", "procedures/fibonacci.py"],
 ]
 
 sub_menu = [
