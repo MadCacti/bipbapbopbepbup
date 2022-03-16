@@ -1,6 +1,7 @@
 # import needed procedures, with ["name", "name.py"]
 from procedures import submenus
-from procedures.fibonacci import fib
+from procedures.fibonacci import fib, fibonacci
+
 main_menu = [
     ["matrix", "procedures/matrix.py"],
     ["swap", "procedures/swap.py"],
@@ -12,10 +13,10 @@ sub_menu = [
     ["biker", "procedures/biker.py"],
 ]
 
-
 # Menu banner is typically defined by menu owner
 border = "=" * 25
 banner = f"\n{border}\nchoose one\n{border}"
+
 
 # menu blueprint
 def menu():
@@ -24,14 +25,17 @@ def menu():
     menu_list.append(["patterns", submenu])
     buildMenu(title, menu_list)
 
+
 def submenuc():
-  title = "submenu" + banner
-  m = submenus.Menu(title, sub_menu)
-  m.menu()
+    title = "submenu" + banner
+    m = submenus.Menu(title, sub_menu)
+    m.menu()
+
 
 def submenu():
     title = "submenu" + banner
     buildMenu(title, sub_menu)
+
 
 # builds console menu
 def buildMenu(banner, options):
@@ -64,16 +68,14 @@ def buildMenu(banner, options):
                 # check main_menu dictionary
                 print(f"file not found!: {action}")
     except ValueError:
-        # not a number 
+        # not a number
         print(f"not a number: {choice}")
     except UnboundLocalError:
         # not one of the numbers listed
         print(f"invalid choice: {choice}")
-  
 
-    buildMenu(banner, options)  
+    buildMenu(banner, options)
 
 
 if __name__ == "__main__":
     menu()
-  
