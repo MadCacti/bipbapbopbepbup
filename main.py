@@ -1,6 +1,5 @@
 # import needed procedures, with ["name", "name.py"]
 from procedures import submenus
-from procedures.fibonacci import fib, fibonacci
 
 main_menu = [
     ["matrix", "procedures/matrix.py"],
