@@ -1,10 +1,11 @@
 # import needed procedures, with ["name", "name.py"]
 from procedures import submenus
-
+from procedures.database import for_loop, while_loop, recursive_loop
 main_menu = [
     ["matrix", "procedures/matrix.py"],
     ["swap", "procedures/swap.py"],
     ["fibonacci", "procedures/fibonacci.py"],
+    ["database", "procedures/database.py"]
 ]
 
 sub_menu = [
