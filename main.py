@@ -1,16 +1,17 @@
 # import needed procedures, with ["name", "name.py"]
 from procedures import submenus
-from procedures.database import for_loop, while_loop, recursive_loop
+from procedures.week1.database import for_loop, while_loop, recursive_loop
 main_menu = [
-    ["matrix", "procedures/matrix.py"],
-    ["swap", "procedures/swap.py"],
-    ["fibonacci", "procedures/fibonacci.py"],
-    ["database", "procedures/database.py"]
+    ["matrix", "procedures/week0/matrix.py"],
+    ["swap", "procedures/week0/swap.py"],
+    ["fibonacci", "procedures/week1/fibonacci.py"],
+    ["database", "procedures/week1/database.py"],
+    ["factorial w/ classes", "procedures/week2/factorial.py"]
 ]
 
 sub_menu = [
-    ["tree", "procedures/tree.py"],
-    ["biker", "procedures/biker.py"],
+    ["tree", "procedures/week0/tree.py"],
+    ["biker", "procedures/week0/biker.py"],
 ]
 
 # Menu banner is typically defined by menu owner
