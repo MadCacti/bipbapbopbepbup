@@ -6,7 +6,8 @@ main_menu = [
     ["swap", "procedures/week0/swap.py"],
     ["fibonacci", "procedures/week1/fibonacci.py"],
     ["database", "procedures/week1/database.py"],
-    ["factorial w/ classes", "procedures/week2/factorial.py"]
+    ["factorial w/ classes", "procedures/week2/factorial.py"],
+    ["palindrome", "procedures/week2/palindrome.py"]
 ]
 
 sub_menu = [
