@@ -5,7 +5,9 @@ class factorial:
       final = final * i
     return final
 
+
+
 factorial = factorial()
 number = input("enter a number to find the factorial of: ")
 number = int(number)
-print("the factorial of ", number, "is", factorial(number))
+print("the factorial of ", number, "is",   factorial(number))
