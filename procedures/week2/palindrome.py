@@ -7,8 +7,8 @@ for phrases in phrase:
   
   for chars in specialchars:
     phrases = phrases.replace(chars, "")
+    phrases = phrases.lower()
     inverse = phrases[::-1] # this reverses string
-    phrases.lower()
   print("new phrase:", phrases)  
   
   if (phrases == inverse):
