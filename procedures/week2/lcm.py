@@ -31,10 +31,10 @@ def run():
 	num = input("imperative(i) or OOP(o)")
 	try:
 		if num == 'i':
-			print("The LCM of 12 and 30 is ", lcm(12,30))
+			print("the LCM of 12 and 30 is ", lcm(12,30))
 		elif num == 'o':
 			lcmoop = LCM(12,30)
-			print("The LCM of 12 and 30 is ", lcmoop())
+			print("the LCM of 12 and 30 is ", lcmoop())
 	except:
 		print("that was not an option u old swine")
 
