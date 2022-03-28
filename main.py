@@ -1,18 +1,23 @@
 # import needed procedures, with ["name", "name.py"]
 from procedures import submenus
-from procedures.week1.database import for_loop, while_loop, recursive_loop
+from procedures.week1.database import *
+from procedures.week2.lcm import *
 main_menu = [
-    ["matrix", "procedures/week0/matrix.py"],
-    ["swap", "procedures/week0/swap.py"],
-    ["fibonacci", "procedures/week1/fibonacci.py"],
     ["database", "procedures/week1/database.py"],
-    ["factorial w/ classes", "procedures/week2/factorial.py"],
     ["palindrome", "procedures/week2/palindrome.py"]
 ]
 
 sub_menu = [
     ["tree", "procedures/week0/tree.py"],
     ["biker", "procedures/week0/biker.py"],
+]
+
+math_sub_menu = [
+    ["matrix", "procedures/week0/matrix.py"],
+    ["swap", "procedures/week0/swap.py"],
+    ["fibonacci", "procedures/week1/fibonacci.py"],
+    ["factorial", "procedures/week2/factorial.py"],
+    ["least common mulitple", "procedures/week2/lcm.py"]
 ]
 
 # Menu banner is typically defined by menu owner
@@ -25,6 +30,7 @@ def menu():
     title = "menu" + banner
     menu_list = main_menu.copy()
     menu_list.append(["patterns", submenu])
+    menu_list.append(["math", math_submenu])
     buildMenu(title, menu_list)
 
 
@@ -38,6 +44,15 @@ def submenu():
     title = "submenu" + banner
     buildMenu(title, sub_menu)
 
+def math_submenuc():
+    title = "submenu" + banner
+    m = submenus.Menu(title, math_sub_menu)
+    m.menu()
+
+
+def math_submenu():
+    title = "submenu" + banner
+    buildMenu(title, math_sub_menu)
 
 # builds console menu
 def buildMenu(banner, options):
