@@ -19,6 +19,7 @@ math_sub_menu = [
 ]
 
 misc_sub_menu = [
+    ["number guesser", "procedures/week3/numGuesser.py"],
     ["database", "procedures/week1/database.py"],
     ["palindrome", "procedures/week2/palindrome.py"]
 ]
