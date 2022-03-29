@@ -3,8 +3,6 @@ from procedures import submenus
 from procedures.week1.database import *
 from procedures.week2.lcm import *
 main_menu = [
-    ["database", "procedures/week1/database.py"],
-    ["palindrome", "procedures/week2/palindrome.py"]
 ]
 
 sub_menu = [
@@ -20,6 +18,11 @@ math_sub_menu = [
     ["least common mulitple", "procedures/week2/lcm.py"]
 ]
 
+misc_sub_menu = [
+    ["database", "procedures/week1/database.py"],
+    ["palindrome", "procedures/week2/palindrome.py"]
+]
+
 # Menu banner is typically defined by menu owner
 border = "=" * 25
 banner = f"\n{border}\nchoose one\n{border}"
@@ -31,6 +34,7 @@ def menu():
     menu_list = main_menu.copy()
     menu_list.append(["patterns", submenu])
     menu_list.append(["math", math_submenu])
+    menu_list.append(["misc", misc_submenu])
     buildMenu(title, menu_list)
 
 
@@ -54,6 +58,16 @@ def math_submenu():
     title = "submenu" + banner
     buildMenu(title, math_sub_menu)
 
+def misc_submenuc():
+    title = "submenu" + banner
+    m = submenus.Menu(title, misc_sub_menu)
+    m.menu()
+
+
+def misc_submenu():
+    title = "submenu" + banner
+    buildMenu(title, misc_sub_menu)
+  
 # builds console menu
 def buildMenu(banner, options):
     print(banner)
