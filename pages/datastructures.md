@@ -60,3 +60,105 @@ def recursive_loop(i=0):
     print(InfoDb[i])
     recursive_loop(i+1)
 ```
+
+## Week 2
+### Created factorial, least common multiple, and palindrome functions.
+
+Factorial:
+```
+class factorial:
+  def __call__(self, num):
+    final = 1
+    for i in range(1, num + 1):
+      final = final * i
+    return final
+
+factorial = factorial()
+number = input("enter a number to find the factorial of: ")
+number = int(number)
+print("the factorial of ", number, "is",   factorial(number))
+```
+Least Common Multiple:
+```
+def lcm(num1, num2): # imperative
+  if (num1 > num2):
+    max = num1
+  else:
+    max = num2
+  while (True):
+      if (max % num1 == 0 and max % num2 == 0):
+          break
+      max = max + 1
+  return max
+
+class LCM:
+  def __init__(self, num1, num2):
+    self.num1 = num1
+    self.num2 = num2
+
+  def __call__(self):
+    if self.num1 > self.num2:
+      max = self.num1
+      
+    else:
+      max = self.num2
+    while (True):
+      if (max % self.num1 == 0 and max % self.num2 == 0):
+        break
+      max = max + 1
+    return max
+    
+
+def run():
+	num = input("imperative(i) or OOP(o)")
+	try:
+		if num == 'i':
+			print("the LCM of 12 and 30 is ", lcm(12,30))
+		elif num == 'o':
+			lcmoop = LCM(12,30)
+			print("the LCM of 12 and 30 is ", lcmoop())
+	except:
+		print("that was not an option u old swine")
+
+
+if __name__ == "__main__":
+    run()
+```
+Palindrome:
+```
+class Palindrome:
+    def __init__(self):
+        self.index = 0
+        self.input = ""
+        self.specials = [" ", "-", ",", "!", "?", ".", "$", "*", "#", "%", "@", "`", "~", "<", ">", "{", "}", "[", "]"]
+
+    def clean(self): # removes special characters and forces all characters to lower case
+        self.input = self.input.lower()
+        for element in self.specials:
+            self.input = self.input.replace(element, '')
+        return self.input
+
+    def __call__(self, input):
+        self.input = input
+        print("original input:", self.input)
+        self.clean()
+
+        index = len(self.input)
+        palindrome = True
+
+        for i in range(index):
+            if self.input[i] != self.input[::-1][i]: # ::-1 essentially reverses string and the rest compares each letter
+                print("errors occurs at the pairs: " + str(i), str((len(self.input) - i)))
+                palindrome = False
+
+        if palindrome == False:
+            print(self.input ,"is not a palindrome")
+        else:
+            print(self.input, " is a palindrome")
+
+
+pal = Palindrome()
+pal("racecar")
+pal("wrineerw")
+pal("raCe caR!>#")
+```
