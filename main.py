@@ -11,6 +11,7 @@ sub_menu = [
 ]
 
 math_sub_menu = [
+    ["decimal/binary converter", "procedures/week3/decBinConverter.py"],
     ["matrix", "procedures/week0/matrix.py"],
     ["swap", "procedures/week0/swap.py"],
     ["fibonacci", "procedures/week1/fibonacci.py"],
