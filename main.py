@@ -2,6 +2,7 @@
 from procedures import submenus
 from procedures.week1.database import *
 from procedures.week2.lcm import *
+
 main_menu = [
   ["change the colors", "procedures/week3/color.py"]
 ]
@@ -41,12 +42,10 @@ def menu():
     menu_list.append(["misc", misc_submenu])
     buildMenu(title, menu_list)
 
-
 def submenuc():
     title = "submenu" + banner
     m = submenus.Menu(title, sub_menu)
     m.menu()
-
 
 def submenu():
     title = "submenu" + banner
@@ -57,7 +56,6 @@ def math_submenuc():
     m = submenus.Menu(title, math_sub_menu)
     m.menu()
 
-
 def math_submenu():
     title = "submenu" + banner
     buildMenu(title, math_sub_menu)
@@ -66,7 +64,6 @@ def misc_submenuc():
     title = "submenu" + banner
     m = submenus.Menu(title, misc_sub_menu)
     m.menu()
-
 
 def misc_submenu():
     title = "submenu" + banner
@@ -113,7 +110,6 @@ def buildMenu(banner, options):
         print()
 
     buildMenu(banner, options)
-
 
 if __name__ == "__main__":
     menu()

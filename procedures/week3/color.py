@@ -7,3 +7,4 @@ green = input("add a value 0-255 for g:")
 text = "This is your colored text"
 
 print(color(int(red), int(blue), int(green), text))
+print()

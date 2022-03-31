@@ -25,9 +25,10 @@ class Palindrome:
 
         if palindrome == False:
             print(self.input ,"is not a palindrome")
+            print()
         else:
             print(self.input, " is a palindrome")
-
+            print()
 
 pal = Palindrome()
 pal("racecar")

@@ -10,4 +10,4 @@ try:
     print(n3, end=" ")
   print()
 except AssertionError :
-  print("please input a positive value")  
+  print("please input a positive value")

@@ -4,3 +4,4 @@ numbers = [age1, age2]
 sort = sorted(numbers)
 print(f"original: {numbers}")
 print(f"ordered: {sort}")
+print()

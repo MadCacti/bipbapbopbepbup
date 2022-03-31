@@ -13,3 +13,5 @@ while(ans != rand):
 
   elif (ans < rand):
     print("The number is higher!")
+
+print()

@@ -27,4 +27,5 @@ elif(answer == 3 and rand == 1):
 elif(answer == 1 and rand == 2):
   print("ai chose paper")
   print("YOU WIN!")
-  
+
+print()

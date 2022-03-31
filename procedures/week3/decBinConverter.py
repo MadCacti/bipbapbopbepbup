@@ -26,3 +26,4 @@ def DecToBin(dec):
 
 
 print(BinToDec(DecToBin(253423)))
+print()
