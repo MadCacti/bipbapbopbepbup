@@ -3,6 +3,7 @@ from procedures import submenus
 from procedures.week1.database import *
 from procedures.week2.lcm import *
 main_menu = [
+  ["change the colors", "procedures/week3/color.py"]
 ]
 
 sub_menu = [
@@ -84,7 +85,7 @@ def buildMenu(banner, options):
         print(key, '->', value[0])
 
     # get user input
-    choice = input("input your choice> ")
+    choice = input("input your choice: ")
 
     # Process user input
     try:
@@ -101,12 +102,15 @@ def buildMenu(banner, options):
             except FileNotFoundError:
                 # check main_menu dictionary
                 print(f"file not found!: {action}")
+                print()
     except ValueError:
         # not a number
         print(f"not a number: {choice}")
+        print()
     except UnboundLocalError:
         # not one of the numbers listed
         print(f"invalid choice: {choice}")
+        print()
 
     buildMenu(banner, options)
 
