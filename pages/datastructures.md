@@ -1,8 +1,7 @@
 {% include base.html %}
 
 # [Link to Replit](https://replit.com/@MadCacti/bipbapbopbepbup)
-
-<iframe frameborder="0" width="100%" height="800px" src="https://replit.com/@MadCacti/bipbapbopbepbup?lite=true#README%22%3E">
+# [Replit Embedded](https://madcacti.github.io/bipbapbopbepbup/pages/replit)
 
 ## Week 0
 ### Learning how menus work and are built in terminal.
@@ -45,6 +44,8 @@ InfoDb.append({
                "Classes Taking":["US History","Racquet Sports","Pre-Calc","AP Physics", "Offroll"] 
               })
 ```
+
+### And different ways to run through DBs:
 ```
 def for_loop():
   for i in range(len(InfoDb)):
@@ -64,7 +65,7 @@ def recursive_loop(i=0):
 ## Week 2
 ### Created factorial, least common multiple, and palindrome functions.
 
-Factorial:
+### Factorial:
 ```
 class factorial:
   def __call__(self, num):
@@ -78,7 +79,7 @@ number = input("enter a number to find the factorial of: ")
 number = int(number)
 print("the factorial of ", number, "is",   factorial(number))
 ```
-Least Common Multiple:
+### Least Common Multiple:
 ```
 def lcm(num1, num2): # imperative
   if (num1 > num2):
@@ -124,7 +125,7 @@ def run():
 if __name__ == "__main__":
     run()
 ```
-Palindrome:
+### Palindrome:
 ```
 class Palindrome:
     def __init__(self):
@@ -162,3 +163,7 @@ pal("racecar")
 pal("wrineerw")
 pal("raCe caR!>#")
 ```
+
+## Week 3
+
+### Focused on applying our own learning onto others projects.
