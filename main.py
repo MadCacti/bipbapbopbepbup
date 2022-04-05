@@ -3,6 +3,7 @@ from procedures import submenus
 from procedures.week1.database import *
 from procedures.week2.lcm import *
 
+# Create all menus/submenus accordingly
 main_menu = [
   ["change the colors", "procedures/week3/color.py"]
 ]
@@ -42,7 +43,7 @@ def menu():
     menu_list.append(["misc", misc_submenu])
     buildMenu(title, menu_list)
 
-def submenuc():
+def submenuc(): # establish each blueprint, the rest are just duplicates
     title = "submenu" + banner
     m = submenus.Menu(title, sub_menu)
     m.menu()
