@@ -2,10 +2,11 @@
 from procedures import submenus
 from procedures.week1.database import *
 from procedures.week2.lcm import *
-
+from procedures.createtask.createtask import *
 # Create all menus/submenus accordingly
 main_menu = [
-  ["change the colors", "procedures/week3/color.py"]
+  ["change the colors", "procedures/week3/color.py"],
+  ["create task", "procedures/createtask/createtask.py"]
 ]
 
 sub_menu = [

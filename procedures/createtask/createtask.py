@@ -1,34 +1,51 @@
 import random
 
-numbers = []
-randomNumber = random.randint(1,20)
-numinput = input("select a random number from 1-20:")
-run()
+class Function:
+    def __init__(self): # initial number
+        self.numList = []
+        self.guessThisNumber = random.randint(1,20)
+        
 
-# seperate run code from whatever we do
+    def __call__(self):  # main run sequence
+        self.num = int(input("select a random number from 1-20: "))
+        while self.num != self.guessThisNumber:
+            print()
+            print("Your number:", self.num)
+            print("You need to get to:", self.guessThisNumber)
+            self.numList.append(self.num)
+            print("previous numbers:", self.numList)
+            print("current score:", len(self.numList))
+            self.functions()
+        print("you got the right number! it was", self.guessThisNumber)
+        print("you got it in", + len(self.numList) ,"tries")
 
-def run(): # main run sequence
+    def functions(self):   # all functions to alter number
+        print("Do you want to...")
+        print()
+        print("add a random amount from 1-9 (1)")
+        print("subtract a random amount from 1-9 (2)")
+        print("multiply by a random amount from 1-9 (3)")
+        print("divide by a random amount from 1-9 (4)")
+        print()
+        userinput = int(input("input here: "))
 
-  if numinput != randomNumber:
-    print("Your number:", numinput)
-    print("You need to get to:", randomNumber)
-    numbers.append(numinput)
-    print("previous numbers:", numbers)
-    functions(numinput)
-    
-  else:
-    print("you got the right number! it was ", randomNumber)
-    
+        randNum = random.randint(1, 9)
+        if userinput == 1:
+            self.num = int(self.num) + int(randNum)
+        elif userinput == 2:
+            self.num = int(self.num) - int(randNum)
+        elif userinput == 3:
+            self.num = int(self.num) * int(randNum)
+        elif userinput == 4:
+            self.num = int(self.num) / int(randNum)
+            self.num = round(self.num)
+        else:
+            print("Enter a number you goon")
 
-def functions(numinput): # all functions to alter number
-  print("Do you want to...")
-  print("add a random amount from 1-9 (1)")
-  print("subtract a random amount from 1-9 (2)")
-  print("multiply by a random amount from 1-9 (3)")
-  print("divide by a random amount from 1-9 (4)")
-  function = input("Input here: ")
-  if function == 1:
-    numinput = numinput + random.randint(1,9)
-  elif function == 2:
-    
-  
+fun = Function()
+
+def driver():
+    fun()
+
+if __name__ == "__main__":
+  driver()
