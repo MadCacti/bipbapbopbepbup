@@ -17,7 +17,8 @@ I don't think I understood this question until reading the correction CB provide
 
 # Quiz 2
 ## Score: 48/50
-![image](https://user-images.githubusercontent.com/45216311/165003608-7be16f02-7bf1-4adf-80b4-e50f96938cc6.png)
+![image](https://user-images.githubusercontent.com/45216311/165006345-44a9fd1c-33a4-4ff6-9362-c7260ee426ed.png)
+
 
 ## Missed Questions
 
