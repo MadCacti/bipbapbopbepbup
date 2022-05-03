@@ -14,5 +14,7 @@ Tri 3 Repo for APCSP
 
 ## [Week 4 Review Ticket](https://github.com/MadCacti/bipbapbopbepbup/issues/5)
 
-## [Week 5/6 Review Ticket](https://github.com/MadCacti/bipbapbopbepbup/issues/6)
+## [Week 5 Review Ticket](https://github.com/MadCacti/bipbapbopbepbup/issues/6)
 
+
+## [Week 6 Review Ticket - AP PREP/MCQS](https://github.com/MadCacti/bipbapbopbepbup/issues/8)
