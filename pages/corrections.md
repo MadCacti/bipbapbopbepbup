@@ -44,3 +44,14 @@ I definitely should not have gotten this one wrong. I chose the option with `the
 ### 35
 ![image](https://user-images.githubusercontent.com/45216311/165401181-94e549cd-2e10-4d7d-8c88-7bf676fc956c.png)
 Also should not have gotten this one wrong. I assumed that if they downloaded the album from a website, it would violate DMCA even if it was a licensed seller, but that is not the case. As long as there is an official license, it will not be a violation of DMCA.
+
+# Quiz 5
+## Score: 49/50
+![image](https://user-images.githubusercontent.com/45216311/167218391-c7905dfa-b6d3-4447-9af7-e2aa5bcbe75a.png)
+
+
+## Missed Questions
+
+### 16
+![image](https://user-images.githubusercontent.com/45216311/167218903-7a842da2-af4b-4017-a5af-2eeac53ceaac.png)
+I dont think I understood this on the first read as I did not see the "or equal" to sign. Basic mistake.
